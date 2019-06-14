@@ -1,0 +1,35 @@
+phon nofreq 
+cell
+   3.85   3.85   3.85  60.000000  60.000000  60.000000
+fractional
+Zn   0.000000   0.000000   0.000000 
+S   0.25   0.25   0.25
+
+species
+Zn core  2.0000
+S  core  1.357
+S  shell -3.357
+
+buckingham 
+Zn core S shell 213.20 0.475 0.0 0.0 15
+S shell S shell 11413.09 0.153 0.0 0.0 15
+
+lennard 9 6
+Zn core S shell 664.35 10.54 0.0 15
+S shell S shell 0.0  129.18  0.0 15 
+
+#three
+#Zn core S shell S shell 0.778 109.47 0.0 15 0.0 15 0.0 15
+
+spring
+S 27.690
+
+#twist + 1
+
+shrink
+1 1 1
+dispersion 1 200
+0. 0. 0. to 0.0 0.5 0.0
+#0. 0. 0. to 0.5 0.0 0.5 to 0.5 0.25 0.75 to 0.375 0.375 0.75 to 0.0 0.0 0.0 
+
+output phon xyz
